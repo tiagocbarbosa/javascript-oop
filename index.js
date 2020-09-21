@@ -2,7 +2,7 @@ import { Client } from './Client.js'
 import { Account } from './Account/Account.js'
 import { CheckingAccount } from './Account/CheckingAccount.js'
 
-/* Printing a Client example */
+/* Printing Client example */
 
 const clientName = 'Tiago'
 const clientCPF = '710.229.300-36'
