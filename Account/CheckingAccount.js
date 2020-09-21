@@ -12,4 +12,9 @@ export class CheckingAccount extends Account {
         super(0, client, agency)
         CheckingAccount.accountsNumber += 1
     }
+
+    withdraw(value) {
+        const tax = value * 1.1
+        return this._withdraw(value, tax)
+    }
 }
