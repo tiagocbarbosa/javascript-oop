@@ -13,6 +13,7 @@ export class CheckingAccount extends Account {
         CheckingAccount.accountsNumber += 1
     }
 
+    // overwriting the abstract method
     withdraw(value) {
         const tax = value * 1.1
         return this._withdraw(value, tax)
