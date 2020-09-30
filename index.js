@@ -15,8 +15,7 @@ console.log(`A Client object: ${JSON.stringify(client)} \n`)
 const cpf = client.cpf // ok
 //client.cpf = '785.226.631-42' // not ok
 
-/* Here we can see how to use a static property by invoking CheckingAccount's 
-'accountsNumber' method */
+/* Here we can see how to use a static property by invoking CheckingAccount's 'accountsNumber' method */
 const checkingAccount = new CheckingAccount(client, 123)
 console.log(`CheckingAccount objects quantity: ${CheckingAccount.accountsNumber} \n`)
 
