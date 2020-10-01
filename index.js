@@ -70,4 +70,7 @@ const withdrawnValue2 = salaryAccount.withdraw(10)
 
 console.log(`CheckingAccount object withdrawn value: ${withdrawnValue1}, SalaryAccount object withdrawn value: ${withdrawnValue2} \n`)
 
-console.log('That is all, I hope you enjoyed :) Thanks!')
+// console.log('That is all, I hope you enjoyed :) Thanks!')
+console.log(`---
+That's all, I invite you to check all the other classes I've created.
+Hope you liked it :) Thanks! \n`)
