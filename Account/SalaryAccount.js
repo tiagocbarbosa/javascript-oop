@@ -9,7 +9,7 @@ export class SalaryAccount extends Account {
     }
 
     withdraw(value) {
-        const tax = value * 1.01
+        const tax = 1.01
         return this._withdraw(value, tax)
     }
 }
