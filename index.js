@@ -1,5 +1,6 @@
 import { Client } from './Client/Client.js'
 import { CheckingAccount } from './Account/CheckingAccount.js'
+import { SalaryAccount } from './Account/SalaryAccount.js'
 import { Employee } from './Employee/Employee.js'
 import { Manager } from './Employee/Manager.js'
 import { AuthenticationSystem } from './AuthenticationSystem/AuthenticationSystem.js'
@@ -46,4 +47,27 @@ console.log(AuthenticationSystem.login(client, clientPassword)) // prints out 'f
 /* An Employee object with wrong password but with 'authenticate' function */
 console.log(AuthenticationSystem.login(employee, wrongPassword)) // prints out 'false'
 /* A Manager object with correct password and 'authenticate' function */
-console.log(AuthenticationSystem.login(manager, 9123)) // prints out 'true'
+console.log(AuthenticationSystem.login(manager, 9123), '\n') // prints out 'true'
+
+/* But hey, what about the accounts? Let's check if they are working! */
+
+/* First of all, you cannot instantiate an abstract class */
+const initialBalance = 300
+const agency = 430
+//const account = new Account(initialBalance, client, agency) // not ok
+
+/* But you can initialize its derived class */
+const salaryAccount = new SalaryAccount(client)
+
+/* And you can use the methods from base class */
+salaryAccount.deposit(300)
+checkingAccount.deposit(300)
+
+/* Last but not least, CheckingAccount and SalaryAccount have different taxes values
+because they have overwritten 'withdraw' method */
+const withdrawnValue1 = checkingAccount.withdraw(10)
+const withdrawnValue2 = salaryAccount.withdraw(10)
+
+console.log(`CheckingAccount object withdrawn value: ${withdrawnValue1}, SalaryAccount object withdrawn value: ${withdrawnValue2}\n`)
+
+console.log('Hope you enjoyed :) Thanks!')
