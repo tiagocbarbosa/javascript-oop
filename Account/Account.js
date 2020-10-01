@@ -1,4 +1,4 @@
-import { Client } from '../Client.js'
+import { Client } from '../Client/Client.js'
 
 export class Account {
 

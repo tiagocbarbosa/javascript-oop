@@ -1,8 +1,8 @@
-import { Client } from './Client.js'
+import { Client } from './Client/Client.js'
 import { CheckingAccount } from './Account/CheckingAccount.js'
 import { Employee } from './Employee/Employee.js'
 import { Manager } from './Employee/Manager.js'
-import { AuthenticationSystem } from './AuthenticationSystem.js'
+import { AuthenticationSystem } from './AuthenticationSystem/AuthenticationSystem.js'
 
 /* Let's see a Client object example, shall we? */
 const clientName = 'Tiago'
