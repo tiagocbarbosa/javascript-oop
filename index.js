@@ -43,11 +43,11 @@ console.log(`A Manager object: ${JSON.stringify(manager)} \n`)
 /* Now let's see a simple password authentication */
 
 /* A Client object with correct password but without 'authenticate' function */
-console.log(AuthenticationSystem.login(client, clientPassword)) // prints out 'false'
+console.log(AuthenticationSystem.login(client, clientPassword)) // won't login, prints out 'false'
 /* An Employee object with wrong password but with 'authenticate' function */
-console.log(AuthenticationSystem.login(employee, wrongPassword)) // prints out 'false'
+console.log(AuthenticationSystem.login(employee, wrongPassword)) // won't login, prints out 'false'
 /* A Manager object with correct password and 'authenticate' function */
-console.log(AuthenticationSystem.login(manager, 9123), '\n') // prints out 'true'
+console.log(AuthenticationSystem.login(manager, 9123), '\n') // will login, prints out 'true'
 
 /* But hey, what about the accounts? Let's check if they are working! */
 
@@ -63,11 +63,11 @@ const salaryAccount = new SalaryAccount(client)
 salaryAccount.deposit(300)
 checkingAccount.deposit(300)
 
-/* Last but not least, CheckingAccount and SalaryAccount have different taxes values
-because they have overwritten 'withdraw' method */
+/* Last but not least, CheckingAccount and SalaryAccount have different taxes values because they have
+overwritten 'withdraw' method */
 const withdrawnValue1 = checkingAccount.withdraw(10)
 const withdrawnValue2 = salaryAccount.withdraw(10)
 
-console.log(`CheckingAccount object withdrawn value: ${withdrawnValue1}, SalaryAccount object withdrawn value: ${withdrawnValue2}\n`)
+console.log(`CheckingAccount object withdrawn value: ${withdrawnValue1}, SalaryAccount object withdrawn value: ${withdrawnValue2} \n`)
 
 console.log('Hope you enjoyed :) Thanks!')
