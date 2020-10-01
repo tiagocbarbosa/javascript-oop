@@ -51,7 +51,7 @@ console.log(AuthenticationSystem.login(manager, 9123), '\n') // will login, prin
 
 /* But hey, what about the accounts? Let's check if they are working! */
 
-/* First of all, you cannot instantiate an abstract class */
+/* First of all, you cannot initialize an abstract class */
 const initialBalance = 300
 const agency = 430
 //const account = new Account(initialBalance, client, agency) // not ok
@@ -70,4 +70,4 @@ const withdrawnValue2 = salaryAccount.withdraw(10)
 
 console.log(`CheckingAccount object withdrawn value: ${withdrawnValue1}, SalaryAccount object withdrawn value: ${withdrawnValue2} \n`)
 
-console.log('Hope you enjoyed :) Thanks!')
+console.log('That is all, I hope you enjoyed :) Thanks!')
