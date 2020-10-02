@@ -43,7 +43,7 @@ constructor(initialBalance, client, agency) {
 ### Inheritance
 In "Account\SavingAccount.js":
 ```
-SavingAccount extends Account {
+class SavingAccount extends Account {
   // ...
 }
 ```
