@@ -49,11 +49,11 @@ SavingAccount extends Account {
 ```
 
 ### Polymorphism
-In "AuthenticationSystem\AuthenticationSystem.js":
+In "Account\CheckingAccount.js":
 ```
-static isAuthenticable(authenticable) {
-  return 'authenticate' in authenticable
-  && authenticable.authenticate instanceof Function
+withdraw(value) {
+  const tax = 1.1
+  return this._withdraw(value, tax)
 }
 ```
 
