@@ -44,3 +44,12 @@ SavingAccount extends Account {
   // ...
 }
 ```
+
+### Polymorphism
+In "AuthenticationSystem\AuthenticationSystem.js":
+```
+static isAuthenticable(authenticable) {
+  return 'authenticate' in authenticable
+  && authenticable.authenticate instanceof Function
+}
+```
