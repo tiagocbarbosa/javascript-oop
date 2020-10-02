@@ -38,7 +38,6 @@ constructor(initialBalance, client, agency) {
   }
   // ...
 }
-
 ```
 
 ### Inheritance
