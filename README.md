@@ -56,4 +56,4 @@ static isAuthenticable(authenticable) {
 
 ------
 
-That's pretty much it. Hope you liked it! Thanks :)
+And that's pretty much it, hope you liked it! Thanks :)
