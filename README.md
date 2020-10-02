@@ -1,6 +1,10 @@
 # javascript-oop
+This is my `javascript` project using some OOP concepts.
 
-Here's a list of OOP concepts that you can find in my project.
+## About
+It is highly recommended to start looking from the "index.js" file. There I explain some aspects of my project.
+
+Check below a list of OOP concepts that you will find in this project.
 
 ### Class
 In "Client\Client.js":
