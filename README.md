@@ -53,3 +53,7 @@ static isAuthenticable(authenticable) {
   && authenticable.authenticate instanceof Function
 }
 ```
+
+------
+
+That's pretty much it. Hope you liked it! Thanks :)
