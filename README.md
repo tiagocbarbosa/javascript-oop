@@ -57,6 +57,15 @@ withdraw(value) {
 }
 ```
 
+### Interface
+In "AuthenticationSystem\AuthenticationSystem.js":
+```
+static isAuthenticable(authenticable) {
+  return 'authenticate' in authenticable
+  && authenticable.authenticate instanceof Function
+}
+```
+
 ------
 
 And that's pretty much it, hope you liked it! Thanks :)
