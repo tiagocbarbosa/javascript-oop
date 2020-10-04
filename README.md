@@ -15,7 +15,7 @@ class Client {
 ```
 
 ### Encapsulation
-In "Employee\Employee.js":
+Private attribute in "Employee\Employee.js":
 ```
 constructor(name, salary, cpf) {
   this._name = name
@@ -53,6 +53,13 @@ In "Account\CheckingAccount.js":
 ```
 withdraw(value) {
   const tax = 1.1
+  return this._withdraw(value, tax)
+}
+```
+In "Account\SalaryAccount.js":
+```
+withdraw(value) {
+  const tax = 1.01
   return this._withdraw(value, tax)
 }
 ```
