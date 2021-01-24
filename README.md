@@ -2,7 +2,7 @@
 This is my `javascript` project using some OOP concepts.
 
 ## About
-It is highly recommended to start looking from the "index.js" file. There I explain some aspects of my project.
+It is highly recommended to start looking at the "index.js" file, there I explain some aspects of my project.
 
 Check below a list of OOP concepts that you will find in this project.
 
